@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+section{
+    padding: 100px 0;
+    margin: 0px;
+ 
+
+}
+.bar{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    
+    padding: 30px 0; 
+    background-color: black;
+    mix-blend-mode:exclusion;
+    height: 80px;
+    
+}
+
+.navbar .bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px;
+}
+.navbar .logo a span{
+    color: orangered;
+    margin: 0px;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: silver;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-top: 0px;
+   
+}
+.navbar .menu li a#contact{
+    
+    color: white;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid red;
+}
+.navbar .menu li a#contact:hover{
+    color: orangered;
+    background: none;
+}
+.navbar .menu li a:hover{
+    color: orange;
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    display: none;
+}
+
+
+.home{
+    display: flex;
+    background: url("abstract-black-stripes-diagonal-background-free-vector.webp") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+}
+.home .bar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home-content{
+    
+    display: inline-block;
+    justify-content: center;
+    flex-wrap:nowrap;
+    width: 350px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    margin-left: -3px;
+    float: left;
+}
+.home-content .text-3 span{
+    color: orangered;
+    font-weight: 500;
+}
+
+@keyframes animate{
+    50%{border-color: transparent;}
+}
+.text-3{
+    border-right: .15em solid #fff; 
+    animation: animate .4s step-end infinite alternate;
+    margin: 0 auto;
+    padding-right: 00px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.15rem;
+    width: auto;
+
+}
+
+/* About*/
+.text{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+.notext{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.about .about-content .img2{
+    width: 45%;
+}
+.about .about-content .img2 img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .text{
+    width: 55%;
+}
+.about .about-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .text p{
+    text-align: justify;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    text-decoration: 1px black underline;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+.skills{
+    background-image: url('abstract-black-stripes-diagonal-background-free-vector.webp');
+    color: #fff;
+}
+
+
+@media (max-width:700px) {
+    .navbar .bar{
+        width: 230px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+       
+    }
+    .menu{
+        visibility:hidden;
+        border: 5px solid white;
+        width: 20px;
+        height: auto;
+    }
+    
+    .home .bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+      }
+    .home-content .text-1{
+        font-size: 20px;
+
+    }
+    .home-content{
+        display: inline-block;
+        justify-content: center;
+    
+    }
+    .home .home-content .text-2{
+        font-size: 40px;
+        font-weight: 400;
+        margin-left: -3px;
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+        margin: 5px 0;
+        margin-left: -3px;
+        width: 250px;
+    }
+    .home-content .text-3 span{
+        color: coral;
+        font-weight: 500;
+        margin-left: 4px;
+    }
+    .home .home-content a{
+        
+        color: #fff;
+        font-size: 19px;
+        padding: 6px 16px;
+        margin-top: 20px;
+        font-weight: 200;
+        border-radius: 4px;
+        border: 1px solid whitesmoke;
+        width: 120px;
+        height: auto;
+    }
+}
+@media (min-width:450px) and (max-width:699px) {
+    .navbar .logo a{
+        color: #fff;
+        font-size: 60px;
+        font-weight: 600;
+        margin: 0px;
+    }
+}
+
+
+
+
+
+
