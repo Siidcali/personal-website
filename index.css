@@ -161,15 +161,21 @@ section{
 .about .about-content .text{
     width: 55%;
 }
+.df{
+    font-weight: 600px;
+}
 .about .about-content .text{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 300;
     margin-bottom: 10px;
+    text-align: center;
+ 
+ 
+ 
+
 }
 
-.about .about-content .text p{
-    text-align: justify;
-}
+
 
 .about .about-content{
     display: flex;
@@ -261,6 +267,7 @@ section .title{
         margin: 0px;
     }
 }
+
 
 
 

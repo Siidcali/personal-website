@@ -4,7 +4,7 @@ function appear() {
   let text = document.querySelector('.text');
   let startDistance = text.getBoundingClientRect().top;
   console.log(text.getBoundingClientRect())
-  let cDistance = window.innerHeight / 1.3;
+  let cDistance = window.innerHeight / 1.1;
   if (startDistance < cDistance) {
     text.classList.add('notext');
   } else {
@@ -46,4 +46,59 @@ function typer() {
 
 }
 typer()
+
+
+
+
+const arrayOfQuotes = [
+  {'author': 'James M. Barrie', 
+   'quote': 'Life is a long lesson in humility.'
+  },
+  {'author': ' The Emperor’s Blades', 
+   'quote': '"There’s no blade as keen as surprise.”'
+  },
+  {'author': 'The Lies of Locke Lamora', 
+   'quote': '“There’s no freedom quite like the freedom of being constantly underestimated.”'
+  },
+  {'author': 'The Eye of the World ', 
+   'quote': '“Death is lighter than a feather. Duty, heavier than a mountain.”'
+  },
+  {'author': 'Nelson Mandela', 
+   'quote': '“An ordinary archer practices until he gets it right. A ranger practices until he never gets it wrong."'
+  },
+  {'author': 'Elbert Hubbard', 
+   'quote': 'Do not take life too seriously. You will not get out alive.'
+  },
+
+];
+var k = 0;
+var x = 0;
+text5 = document.getElementById('quoteOutput')
+text5.innerHTML = ''
+
+function qouter() {
+const str1 = arrayOfQuotes[x].quote.split('')
+setTimeout(function () {
+  document.querySelector('#authorOutput').textContent = `--${arrayOfQuotes[x].author}`;
+  k++;
+  text5.append(str1[k - 1]);          
+  if (k <str1.length  ) {
+    qouter();
+  } 
+  if (x === 5 && k === str1.length) { 
+  setTimeout(function(){
+      x = 0; k = 0;
+      text5.innerHTML = ''
+      qouter()
+},1300) }
+  else if (x < 5 && k === str1.length  ) { 
+      setTimeout(function(){
+          x++; k = 0; 
+          text5.innerHTML = ''
+          qouter()
+  },1300);}
+}, 40)
+
+}
+qouter()
 
