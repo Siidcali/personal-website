@@ -140,6 +140,10 @@ section{
 }
 
 /* About*/
+.about{
+    height: 100vh;
+    min-height: 500px;
+}
 .text{
     opacity: 0;
     transform: translateY(20px);
@@ -193,9 +197,16 @@ section .title{
     padding-bottom: 20px;
 
 }
-.skills{
-    background-image: url('abstract-black-stripes-diagonal-background-free-vector.webp');
+.Game{
+    display: flex;
+    background-image:  url('abstract-black-stripes-diagonal-background-free-vector.webp');
     color: #fff;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
