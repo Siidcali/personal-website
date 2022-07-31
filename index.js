@@ -63,7 +63,7 @@ const arrayOfQuotes = [
   {'author': 'The Eye of the World ', 
    'quote': '“Death is lighter than a feather. Duty, heavier than a mountain.”'
   },
-  {'author': 'Nelson Mandela', 
+  {'author': 'Ranger’s Apprentice', 
    'quote': '“An ordinary archer practices until he gets it right. A ranger practices until he never gets it wrong."'
   },
   {'author': 'Elbert Hubbard', 
