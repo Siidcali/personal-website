@@ -102,3 +102,125 @@ setTimeout(function () {
 }
 qouter()
 
+
+win=0
+lose=0
+draw=0
+// left
+function Rock(){
+    var el=document.getElementById("left");
+    el.innerHTML="<img src=\"rockstill.gif\">"
+}
+function Paper(){
+    var el=document.getElementById("left");
+    el.innerHTML="<img src=\"paperstill.gif\">"
+
+}
+function Scissor(){
+    var el=document.getElementById("left");
+    el.innerHTML="<img src=\"scissorstill.gif\">"
+}
+// left
+
+// right
+function RRock(){
+    var el=document.getElementById("right");
+    el.innerHTML="<img src=\"rockstill.gif\">"
+}
+function RPaper(){
+    var el=document.getElementById("right");
+    el.innerHTML="<img src=\"paperstill.gif\">"
+
+}
+function RScissor(){
+    var el=document.getElementById("right");
+    el.innerHTML="<img src=\"scissorstill.gif\">"
+}
+// right
+
+const rockBtn = document.querySelector('.rock');
+rockBtn.addEventListener('click',function(){
+    choice = Math.floor(Math.random() * 3);
+    console.log(choice)
+    Rock();
+    switch (choice){
+        case 0:
+            RRock();
+            draw++
+            var D=document.querySelector(".draw");
+            D.innerText=`Draw-${draw}`; 
+            break;
+        case 1:
+            RPaper();
+            lose++
+            var L=document.querySelector(".lose");
+            L.innerText=`Lose-${lose}`; 
+            break;
+        case 2:
+            RScissor();
+            win++
+            var w=document.querySelector(".win");
+            w.innerText=`Win-${win}`; 
+            break;
+        default:
+            break
+    }
+})
+
+const paperBtn = document.querySelector('.paper');
+paperBtn.addEventListener('click',function(){
+    choice = Math.floor(Math.random() * 3);
+    console.log(choice)
+    Paper();
+    switch (choice){
+        case 0:
+            RRock();
+            win++
+            var w=document.querySelector(".win");
+            w.innerText=`Win-${win}`; 
+            break;
+        case 1:
+            RPaper();
+            draw++
+            var D=document.querySelector(".draw");
+            D.innerText=`Draw-${draw}`; 
+            break;
+        case 2:
+            RScissor();
+            lose++
+            var L=document.querySelector(".lose");
+            L.innerText=`Lose-${lose}`; 
+            break;
+        default:
+            break
+    }
+})
+
+const scissorBtn = document.querySelector('.scissor');
+scissorBtn.addEventListener('click',function(){
+    choice = Math.floor(Math.random() * 3);
+    console.log(choice)
+    Scissor();
+    switch (choice){
+        case 0:
+            RRock();
+            lose++
+            var L=document.querySelector(".lose");
+            L.innerText=`Lose-${lose}`; 
+            break;
+        case 1:
+            RPaper();
+            win++  
+            var w=document.querySelector(".win");
+            w.innerText=`Win-${win}`; 
+            break;
+        case 2:
+            RScissor();
+            draw++
+            var D=document.querySelector(".draw");
+            D.innerText=`Draw-${draw}`; 
+            break;
+        default:
+            break
+    }
+})

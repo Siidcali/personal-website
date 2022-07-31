@@ -270,7 +270,58 @@ section .title{
 
 
 
+.body{
+    display: flex;
+    justify-content: center;
+}
+.count{
+    color: wheat;
+    font-size: 35px;
+    background-color:rgb(4, 19, 21);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#left{
+    display: inline-block;
+    width: 245px;
+}
+.right{
+    display: inline-block;
 
-
+    transform: scaleX(-1);
+    width: 250px;
+    height: auto;
+    
+}
+.container{
+    width: 500px;
+    height:auto;
+    background-color: rgb(14, 37, 59);
+}
+.btn{
+    display: flex;
+    width: 500px;
+    height: 60px;
+    justify-content: space-evenly;
+    background-color: rgb(4, 19, 21);
+    border-radius: 6px;
+}
+.rock{
+    font-size: 40px;
+    background: none;
+    border: none;
+   
+}
+.paper{
+    font-size: 40px;
+    background: none;
+    border: none;
+}
+.scissor{
+    font-size: 40px;
+    background: none;
+    border: none;
+}
 
 
