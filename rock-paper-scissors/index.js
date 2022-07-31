@@ -39,12 +39,15 @@ rockBtn.addEventListener('click',function(){
     switch (choice){
         case 0:
             RRock();
+            window.alert('draw')
             break;
         case 1:
             RPaper();
+            console.log('lose')
             break;
         case 2:
             RScissor();
+            console.log('win')
             break;
         default:
             break
