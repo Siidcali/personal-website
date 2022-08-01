@@ -28,7 +28,7 @@ section{
     
     padding: 30px 0; 
     background-color: black;
-    mix-blend-mode:exclusion;
+    mix-blend-mode: hard-light;
     height: 80px;
     
 }
@@ -140,7 +140,7 @@ section{
 }
 
 /* About*/
-.about{
+.hobbies{
     height: 100vh;
     min-height: 500px;
 }
@@ -153,22 +153,22 @@ section{
     opacity: 1;
     transform: translateY(0px);
 }
-.about .about-content .img2{
+.hobbies .hobbies-content .img2{
     width: 45%;
 }
-.about .about-content .img2 img{
-    height: 400px;
-    width: 400px;
+.hobbies .hobbies-content .img2 img{
+    height: 500px;
+    width: 500px;
     object-fit: cover;
     border-radius: 6px;
 }
-.about .about-content .text{
+.hobbies .hobbies-content .text{
     width: 55%;
 }
 .df{
     font-weight: 600px;
 }
-.about .about-content .text{
+.hobbies .hobbies-content .text{
     font-size: 35px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -181,7 +181,7 @@ section{
 
 
 
-.about .about-content{
+.hobbies .hobbies-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -210,75 +210,6 @@ section .title{
 }
 
 
-@media (max-width:700px) {
-    .navbar .bar{
-        width: 230px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-       
-    }
-    .menu{
-        visibility:hidden;
-        border: 5px solid white;
-        width: 20px;
-        height: auto;
-    }
-    
-    .home .bar{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-       
-      }
-    .home-content .text-1{
-        font-size: 20px;
-
-    }
-    .home-content{
-        display: inline-block;
-        justify-content: center;
-    
-    }
-    .home .home-content .text-2{
-        font-size: 40px;
-        font-weight: 400;
-        margin-left: -3px;
-    }
-    .home .home-content .text-3{
-        font-size: 25px;
-        margin: 5px 0;
-        margin-left: -3px;
-        width: 250px;
-    }
-    .home-content .text-3 span{
-        color: coral;
-        font-weight: 500;
-        margin-left: 4px;
-    }
-    .home .home-content a{
-        
-        color: #fff;
-        font-size: 19px;
-        padding: 6px 16px;
-        margin-top: 20px;
-        font-weight: 200;
-        border-radius: 4px;
-        border: 1px solid whitesmoke;
-        width: 120px;
-        height: auto;
-    }
-}
-@media (min-width:450px) and (max-width:699px) {
-    .navbar .logo a{
-        color: #fff;
-        font-size: 60px;
-        font-weight: 600;
-        margin: 0px;
-    }
-}
-
 
 
 .body{
@@ -292,6 +223,7 @@ section .title{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 6px;
 }
 #left{
     display: inline-block;
@@ -299,40 +231,53 @@ section .title{
 }
 .right{
     display: inline-block;
-
     transform: scaleX(-1);
     width: 250px;
     height: auto;
     
 }
 .container{
-    width: 500px;
-    height:auto;
+    width: 800px;
+    height:500px;
     background-color: rgb(14, 37, 59);
+    border-radius: 6px;
 }
 .btn{
     display: flex;
-    width: 500px;
-    height: 60px;
+    width: 800px;
+    height: 100px;
     justify-content: space-evenly;
     background-color: rgb(4, 19, 21);
-    border-radius: 6px;
+    border-radius: 4px;
 }
 .rock{
-    font-size: 40px;
+    font-size: 60px;
     background: none;
     border: none;
    
 }
 .paper{
-    font-size: 40px;
+    font-size: 60px;
     background: none;
     border: none;
 }
 .scissor{
-    font-size: 40px;
+    font-size: 60px;
     background: none;
     border: none;
 }
+.lefts{
+    width: 400px;
+    height: auto;
+    
+}
+.rights{
+    width: 400px;
+    height: auto;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
 
+}
 

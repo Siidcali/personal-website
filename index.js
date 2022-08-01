@@ -109,32 +109,32 @@ draw=0
 // left
 function Rock(){
     var el=document.getElementById("left");
-    el.innerHTML="<img src=\"rockstill.gif\">"
+    el.innerHTML="<img class=\"lefts\" src=\"rockstill.gif\">"
 }
 function Paper(){
     var el=document.getElementById("left");
-    el.innerHTML="<img src=\"paperstill.gif\">"
+    el.innerHTML="<img class=\"lefts\" src=\"paperstill.gif\">"
 
 }
 function Scissor(){
     var el=document.getElementById("left");
-    el.innerHTML="<img src=\"scissorstill.gif\">"
+    el.innerHTML="<img class=\"lefts\" src=\"scissorstill.gif\">"
 }
 // left
 
 // right
 function RRock(){
     var el=document.getElementById("right");
-    el.innerHTML="<img src=\"rockstill.gif\">"
+    el.innerHTML="<img class=\"rights\" src=\"rockstill.gif\">"
 }
 function RPaper(){
     var el=document.getElementById("right");
-    el.innerHTML="<img src=\"paperstill.gif\">"
+    el.innerHTML="<img class=\"rights\" src=\"paperstill.gif\">"
 
 }
 function RScissor(){
     var el=document.getElementById("right");
-    el.innerHTML="<img src=\"scissorstill.gif\">"
+    el.innerHTML="<img class=\"rights\" src=\"scissorstill.gif\">"
 }
 // right
 
