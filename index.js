@@ -4,7 +4,7 @@ function appear() {
   let text = document.querySelector('.text');
   let startDistance = text.getBoundingClientRect().top;
   console.log(text.getBoundingClientRect())
-  let cDistance = window.innerHeight / 1.1;
+  let cDistance = window.innerHeight / 1.5;
   if (startDistance < cDistance) {
     text.classList.add('notext');
   } else {
@@ -51,9 +51,7 @@ typer()
 
 
 const arrayOfQuotes = [
-  {'author': 'James M. Barrie', 
-   'quote': 'Life is a long lesson in humility.'
-  },
+ 
   {'author': ' The Emperor’s Blades', 
    'quote': '"There’s no blade as keen as surprise.”'
   },
@@ -65,9 +63,6 @@ const arrayOfQuotes = [
   },
   {'author': 'Ranger’s Apprentice', 
    'quote': '“An ordinary archer practices until he gets it right. A ranger practices until he never gets it wrong."'
-  },
-  {'author': 'Elbert Hubbard', 
-   'quote': 'Do not take life too seriously. You will not get out alive.'
   },
 
 ];
@@ -85,13 +80,13 @@ setTimeout(function () {
   if (k <str1.length  ) {
     qouter();
   } 
-  if (x === 5 && k === str1.length) { 
+  if (x === 3 && k === str1.length) { 
   setTimeout(function(){
       x = 0; k = 0;
       text5.innerHTML = ''
       qouter()
 },1300) }
-  else if (x < 5 && k === str1.length  ) { 
+  else if (x < 3 && k === str1.length  ) { 
       setTimeout(function(){
           x++; k = 0; 
           text5.innerHTML = ''
@@ -224,3 +219,5 @@ scissorBtn.addEventListener('click',function(){
             break
     }
 })
+
+
