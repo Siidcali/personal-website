@@ -223,12 +223,12 @@ section .title{
 }
 #left{
     display: inline-block;
-    width: 145px;
+    width: 165px;
 }
 .right{
     display: inline-block;
     transform: scaleX(-1);
-    width: 150px;
+    width: 170px;
     height: auto;
     
 }
@@ -243,48 +243,47 @@ h1{
     font-size: 30px
 }
 .container{
-    width: 500px;
-    height:269px;
+    width: 530px;
+    height:279px;
     background-color: rgb(14, 37, 59);
     border-radius: 6px;
 }
 .btn{
     display: flex;
-    width: 570px;
-    height: 50px;
+    width: 605px;
+    height: 70px;
     justify-content: space-evenly;
     background-color: rgb(4, 19, 21);
     border-radius: 4px;
 }
 .rock{
-    font-size: 30px;
+    font-size: 35px;
     background: none;
     border: none;
    
 }
 .paper{
-    font-size: 30px;
+    font-size: 35px;
     background: none;
     border: none;
 }
 .scissor{
-    font-size: 30px;
+    font-size: 35px;
     background: none;
     border: none;
 }
 .lefts{
-    width: 200px;
+    width: 230px;
     height: auto;
     
 }
 .rights{
-    width: 200px;
+    width: 230px;
     height: auto;
 }
 .images{
     display: flex;
     justify-content: space-between;
-
 }
 
 
