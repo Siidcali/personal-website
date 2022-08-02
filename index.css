@@ -157,13 +157,13 @@ section{
     width: 45%;
 }
 .hobbies .hobbies-content .img2 img{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
 .hobbies .hobbies-content .text{
-    width: 55%;
+    width: 45%;
 }
 .df{
     font-weight: 600px;
@@ -218,7 +218,7 @@ section .title{
 }
 .count{
     color: wheat;
-    font-size: 35px;
+    font-size: 25px;
     background-color:rgb(4, 19, 21);
     display: flex;
     flex-direction: column;
@@ -227,12 +227,12 @@ section .title{
 }
 #left{
     display: inline-block;
-    width: 245px;
+    width: 145px;
 }
 .right{
     display: inline-block;
     transform: scaleX(-1);
-    width: 250px;
+    width: 150px;
     height: auto;
     
 }
@@ -244,45 +244,45 @@ section .title{
     transform: scaleX(-1);
 }
 h1{
-    font-size: 50px
+    font-size: 30px
 }
 .container{
-    width: 800px;
-    height:569px;
+    width: 500px;
+    height:269px;
     background-color: rgb(14, 37, 59);
     border-radius: 6px;
 }
 .btn{
     display: flex;
-    width: 800px;
-    height: 100px;
+    width: 570px;
+    height: 50px;
     justify-content: space-evenly;
     background-color: rgb(4, 19, 21);
     border-radius: 4px;
 }
 .rock{
-    font-size: 60px;
+    font-size: 30px;
     background: none;
     border: none;
    
 }
 .paper{
-    font-size: 60px;
+    font-size: 30px;
     background: none;
     border: none;
 }
 .scissor{
-    font-size: 60px;
+    font-size: 30px;
     background: none;
     border: none;
 }
 .lefts{
-    width: 400px;
+    width: 200px;
     height: auto;
     
 }
 .rights{
-    width: 400px;
+    width: 200px;
     height: auto;
 }
 .images{
