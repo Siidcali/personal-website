@@ -64,8 +64,12 @@ const arrayOfQuotes = [
   {'author': 'Ranger’s Apprentice', 
    'quote': '“An ordinary archer practices until he gets it right. A ranger practices until he never gets it wrong."'
   },
-
+  {
+    'author': 'Antoine de Saint-Exupér',
+    'quote':'“Perfection is reached not when there is nothing more to add, but when there is nothing more to subtract.”'
+  }
 ];
+
 var k = 0;
 var x = 0;
 text5 = document.getElementById('quoteOutput')
